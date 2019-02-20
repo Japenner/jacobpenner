@@ -3,7 +3,7 @@
     "version": 1,
     "newProjectRoot": "projects",
     "projects": {
-        "test-theme": {
+        "jacobpenner": {
             "root": "",
             "sourceRoot": "src",
             "projectType": "application",
@@ -17,7 +17,7 @@
                 "build": {
                     "builder": "@angular-devkit/build-angular:browser",
                     "options": {
-                        "outputPath": "dist/test-theme",
+                        "outputPath": "dist/jacobpenner",
                         "index": "src/index.html",
                         "main": "src/main.ts",
                         "polyfills": "src/polyfills.ts",
@@ -32,7 +32,7 @@
                             "src/assets/css/demo.css"
                         ],
                         "scripts": [
-                            "../test-theme/node_modules/rellax/rellax.min.js"
+                            "../jacobpenner/node_modules/rellax/rellax.min.js"
                         ],
                         "es5BrowserSupport": true
                     },
@@ -66,18 +66,18 @@
                 "serve": {
                     "builder": "@angular-devkit/build-angular:dev-server",
                     "options": {
-                        "browserTarget": "test-theme:build"
+                        "browserTarget": "jacobpenner:build"
                     },
                     "configurations": {
                         "production": {
-                            "browserTarget": "test-theme:build:production"
+                            "browserTarget": "jacobpenner:build:production"
                         }
                     }
                 },
                 "extract-i18n": {
                     "builder": "@angular-devkit/build-angular:extract-i18n",
                     "options": {
-                        "browserTarget": "test-theme:build"
+                        "browserTarget": "jacobpenner:build"
                     }
                 },
                 "test": {
@@ -111,7 +111,7 @@
                 }
             }
         },
-        "test-theme-e2e": {
+        "jacobpenner-e2e": {
             "root": "e2e/",
             "projectType": "application",
             "prefix": "",
@@ -120,11 +120,11 @@
                     "builder": "@angular-devkit/build-angular:protractor",
                     "options": {
                         "protractorConfig": "e2e/protractor.conf.js",
-                        "devServerTarget": "test-theme:serve"
+                        "devServerTarget": "jacobpenner:serve"
                     },
                     "configurations": {
                         "production": {
-                            "devServerTarget": "test-theme:serve:production"
+                            "devServerTarget": "jacobpenner:serve:production"
                         }
                     }
                 },
@@ -140,5 +140,5 @@
             }
         }
     },
-    "defaultProject": "test-theme"
+    "defaultProject": "jacobpenner"
 }
